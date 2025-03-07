@@ -1,6 +1,17 @@
+:root {
+  --link: #007eb6;
+  --link-light: #02a1e6;
+  --link-dark: #005275;
+  --hover: #df3030;
+  --text: #333;
+  --med-gray: #666;
+  --light-gray: #ddd;
+  --dk-yellow: #dbd1b5;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: #333;
+  color: var(--text);
   font-size: 100%;
   max-width: 980px;
   margin: 0 auto;
@@ -56,7 +67,35 @@ figcaption {
   border-bottom: 1px dashed #aaa;
 }
 
-@media (min-width: 480px) {
+header {
+  max-width: 980px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  h1 {
+    font-size: 2.5rem;
+  }
+  p {
+    display: none;
+    @media (width > 780px) {
+      display: block;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      line-height: 1.1;
+      margin-bottom: 1rem;
+    }
+  }
+  h1 + p {
+    padding-top: 1rem;
+    border-top: 3px double #dbd1b5;
+  }
+  p + p {
+    font-size: 1rem;
+    line-height: 1.1;
+    color: #999;
+  }
+}
+
+@media (width > 480px) {
   .stories {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -64,4 +103,3 @@ figcaption {
   }
 }
 
-/*# sourceMappingURL=styles.css.map */

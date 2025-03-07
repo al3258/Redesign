@@ -1,5 +1,5 @@
 // store the link plus the API key in a variable
-const key = "XJYe53T8oZ9wRgPqxGVAs2NtPqId5pdL";
+const key = "AbGJb6XIGRNvoQRnYZdFOfBVtIqAj641";
 const API = `https://api.nytimes.com/svc/topstories/v2/nyregion.json?api-key=${key}`;
 
 function getStories() {

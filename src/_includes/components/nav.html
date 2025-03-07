@@ -1,9 +1,9 @@
-<nav aria-label="Primary">
+<nav>
   <ul>
-    {% for page in collections.page %}
-    <li>
-      <a href="{{ page.url }}"> {{ page.data.navTitle }} </a>
+    {% for nav in collections.nav %}
+    <li class="{% if nav.url == page.url %}active{% endif %}">
+      <a href="{{ nav.url | url }}">{{ nav.data.navTitle }}</a>
     </li>
-    {% endfor %}
+    {%- endfor -%}
   </ul>
 </nav>
