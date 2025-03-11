@@ -32,3 +32,15 @@ function showData(stories) {
 if (document.querySelector(".home")) {
   getStories();
 }
+
+//  show/hide nav
+
+document.addEventListener('click', clickHandlers)
+
+function clickHandlers(event){
+  console.log(event.target)
+  if(event.target.matchs('#pull')){
+    document.querySelector('body').classList.toggle("show-nav");
+    event.preventDefault()
+  }
+}
