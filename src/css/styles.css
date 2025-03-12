@@ -35,6 +35,8 @@ nav ul {
   @media (width > 780px) {
     display: flex;
     justify-content: space-around;
+    background: var(--link);
+    text-align: center;
   }
 }
 

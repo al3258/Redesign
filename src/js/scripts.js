@@ -37,10 +37,10 @@ if (document.querySelector(".home")) {
 
 document.addEventListener('click', clickHandlers)
 
-function clickHandlers(event){
-  console.log(event.target)
-  if(event.target.matchs('#pull')){
+function clickHandlers(e){
+  console.log(e.target);
+  if(e.target.matches('#pull')){
     document.querySelector('body').classList.toggle("show-nav");
-    event.preventDefault()
+    e.preventDefault()
   }
 }
